@@ -6,6 +6,10 @@ const vm = new Vue({
     question3: false,
     question4: false,
     question5: false,
+    bgColorPri: "#f9edff",
+    bgColorSec: "#ffffff",
+    corDetalhePri: "#a237da",
+    corDetalheSec: "#341437",
   },
   // methods: {
   //   questionActive() {

@@ -12,9 +12,7 @@
   background: var(--cor-bg-primaria)
     url("../images/background-pattern-desktop.svg") no-repeat;
   background-size: contain;
-  /* height: 100vh; */
   padding: 145px;
-  /* box-shadow: inset 0 400px var(--cor-bg-terciaria); */
 }
 
 .faq-conteudo {
@@ -22,10 +20,12 @@
   display: flex;
   flex-direction: column;
   max-width: 600px;
+  width: 565px;
   margin: 0 auto;
   padding: 40px;
   height: 0 auto;
   border-radius: 16px;
+  overflow: hidden;
 }
 .faq-titulo {
   display: flex;
@@ -39,6 +39,9 @@
 .bi-star-fill {
   color: var(--cor-detalhe-primaria);
   font-size: 36px;
+}
+.faq-accordion {
+  max-width: 500px;
 }
 .faq-accordion dt {
   font: 600 1.25em/1.3 "Work Sans", sans-serif;
@@ -63,3 +66,16 @@
 .bi-dash-circle-fill {
   color: var(--cor-detalhe-secundaria);
 }
+.bi-dash-circle-fill:checked {
+  animation: show 0.5s forwards;
+}
+/* @keyframes show {
+  from {
+    opacity: 0;
+    transform: rotate(180deg);
+  }
+  from {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+} */

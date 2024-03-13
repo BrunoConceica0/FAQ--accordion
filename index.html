@@ -14,54 +14,55 @@
 </head>
 
 <body>
-
-  <section class="faq">
-    <div class="faq-conteudo">
-      <div class="faq-titulo">
-        <span class="bi bi-star-fill"></span>
-        <h1 class="font-w-g">FAQs</h1>
-      </div>
-      <section class="faq-accordion">
-        <div id="app">
-          <dl>
-            <div @click="question1 = !question1" class="faq-question">
-              <dt>What is FrontEnd Mentor, and how it help me?</dt>
-              <span v-if="!question1" class="bi bi-plus-circle-fill"></span>
-              <span v-if="question1" class="bi bi-dash-circle-fill"></span>
-            </div>
-            <dd v-if="question1"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque similique deserunt, voluptates odit veritatis doloribus, quo neque facere sint minima veniam, nisi possimus est excepturi sunt. Pariatur delectus iure corporis.</dd>
-            <div @click="question2 = !question2" class="faq-question">
-              <dt>What is FrontEnd Mentor, and how it help me?</dt>
-              <span v-if="!question2" class="bi bi-plus-circle-fill"></span>
-              <span v-if="question2" class="bi bi-dash-circle-fill"></span>
-            </div>
-            <dd v-if="question2">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque similique deserunt, voluptates odit veritatis doloribus, quo neque facere sint minima veniam, nisi possimus est excepturi sunt. Pariatur delectus iure corporis.
-            </dd>
-            <div @click="question3 = !question3" class="faq-question">
-              <dt>What is FrontEnd Mentor, and how it help me?</dt>
-              <span v-if="!question3" class="bi bi-plus-circle-fill"></span>
-              <span v-if="question3" class="bi bi-dash-circle-fill"></span>
-            </div>
-            <dd v-if="question3"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque similique deserunt, voluptates odit veritatis doloribus, quo neque facere sint minima veniam, nisi possimus est excepturi sunt. Pariatur delectus iure corporis.</dd>
-            <div @click="question4 = !question4" class="faq-question">
-              <dt>What is FrontEnd Mentor, and how it help me?</dt>
-              <span v-if="!question4" class="bi bi-plus-circle-fill"></span>
-              <span v-if="question4" class="bi bi-dash-circle-fill"></span>
-            </div>
-            <dd v-if="question4"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque similique deserunt, voluptates odit veritatis doloribus, quo neque facere sint minima veniam, nisi possimus est excepturi sunt. Pariatur delectus iure corporis.</dd>
-            <div @click="question5 = !question5" class="faq-question">
-              <dt>What is FrontEnd Mentor, and how it help me?</dt>
-              <span v-if="!question5" class="bi bi-plus-circle-fill"></span>
-              <span v-if="question5" class="bi bi-dash-circle-fill"></span>
-            </div>
-            <dd v-if="question5"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque similique deserunt, voluptates odit veritatis doloribus, quo neque facere sint minima veniam, nisi possimus est excepturi sunt. Pariatur delectus iure corporis.</dd>
-          </dl>
+  <main id="app">
+    <section class="faq">
+      <div class=" faq-conteudo" :style="{background: bgColorSec}">
+        <div class="faq-titulo">
+          <span :style="{color: corDetalhePri}" class="bi bi-star-fill"></span>
+          <h1 class="font-w-g">FAQs</h1>
         </div>
-      </section>
-    </div>
+        <section class="faq-accordion">
+          <div>
+            <dl>
+              <div @click="question1 = !question1" class="faq-question">
+                <dt>What is FrontEnd Mentor, and how it help me?</dt>
+                <span v-if="!question1" :style="{color: corDetalhePri}" class="bi bi-plus-circle-fill"></span>
+                <span v-if="question1" :style="{color: corDetalheSec}" class="bi bi-dash-circle-fill"></span>
+              </div>
+              <dd v-if="question1"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque similique deserunt, voluptates odit veritatis doloribus, quo neque facere sint minima veniam, nisi possimus est excepturi sunt. Pariatur delectus iure corporis.</dd>
+              <div @click="question2 = !question2" class="faq-question">
+                <dt>What is FrontEnd Mentor, and how it help me?</dt>
+                <span v-if="!question2" class="bi bi-plus-circle-fill" :style="{color: corDetalhePri}"></span>
+                <span v-if="question2" :style="{color: corDetalheSec}" class="bi bi-dash-circle-fill"></span>
+              </div>
+              <dd v-if="question2">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque similique deserunt, voluptates odit veritatis doloribus, quo neque facere sint minima veniam, nisi possimus est excepturi sunt. Pariatur delectus iure corporis.
+              </dd>
+              <div @click="question3 = !question3" class="faq-question">
+                <dt>What is FrontEnd Mentor, and how it help me?</dt>
+                <span v-if="!question3" :style="{color: corDetalhePri}" class="bi bi-plus-circle-fill"></span>
+                <span v-if="question3" :style="{color: corDetalheSec}" class="bi bi-dash-circle-fill"></span>
+              </div>
+              <dd v-if="question3"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque similique deserunt, voluptates odit veritatis doloribus, quo neque facere sint minima veniam, nisi possimus est excepturi sunt. Pariatur delectus iure corporis.</dd>
+              <div @click="question4 = !question4" class="faq-question">
+                <dt>What is FrontEnd Mentor, and how it help me?</dt>
+                <span v-if="!question4" :style="{color: corDetalhePri}" class="bi bi-plus-circle-fill"></span>
+                <span v-if="question4" class="bi bi-dash-circle-fill"></span>
+              </div>
+              <dd v-if="question4"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque similique deserunt, voluptates odit veritatis doloribus, quo neque facere sint minima veniam, nisi possimus est excepturi sunt. Pariatur delectus iure corporis.</dd>
+              <div @click="question5 = !question5" class="faq-question">
+                <dt>What is FrontEnd Mentor, and how it help me?</dt>
+                <span v-if="!question5" :style="{color: corDetalhePri}" class="bi bi-plus-circle-fill"></span>
+                <span v-if="question5" :style="{color: corDetalheSec}" class="bi bi-dash-circle-fill"></span>
+              </div>
+              <dd v-if="question5"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque similique deserunt, voluptates odit veritatis doloribus, quo neque facere sint minima veniam, nisi possimus est excepturi sunt. Pariatur delectus iure corporis.</dd>
+            </dl>
+          </div>
+        </section>
+      </div>
 
-  </section>
+    </section>
+  </main>
 
 
   <script type="module" src="./js/script.js"></script>
