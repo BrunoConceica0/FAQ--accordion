@@ -4,3 +4,18 @@
 .font-w-m {
   font: 500 1.25em/1.5 "Work Sans", sans-serif;
 }
+.font-w-p {
+  font: 300 1em/1.3 "Work Sans", sans-serif;
+}
+@media (max-width: 500px) {
+  .font-w-g {
+    font: 700 2.5em/1.5 "Work Sans", sans-serif;
+  }
+  .font-w-m {
+    font: 500 1em/1.5 "Work Sans", sans-serif;
+  }
+  .font-w-p {
+    font: 300 0.875em/1.3 "Work Sans", sans-serif;
+  }
+
+}
