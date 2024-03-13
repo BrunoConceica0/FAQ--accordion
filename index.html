@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <title>FAQ accordion</title>
+</head>
+
+<body>
+
+  <section class="faq">
+    <div class="faq-conteudo">
+      <div class="faq-titulo">
+        <span class="bi bi-star-fill"></span>
+        <h1 class="font-w-g">FAQs</h1>
+      </div>
+      <section class="faq-accordion">
+        <div id="app">
+          <dl>
+            <div @click="question1 = !question1" class="faq-question">
+              <dt>What is FrontEnd Mentor, and how it help me?</dt>
+              <span v-if="!question1" class="bi bi-plus-circle-fill"></span>
+              <span v-if="question1" class="bi bi-dash-circle-fill"></span>
+            </div>
+            <dd v-if="question1"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque similique deserunt, voluptates odit veritatis doloribus, quo neque facere sint minima veniam, nisi possimus est excepturi sunt. Pariatur delectus iure corporis.</dd>
+            <div @click="question2 = !question2" class="faq-question">
+              <dt>What is FrontEnd Mentor, and how it help me?</dt>
+              <span v-if="!question2" class="bi bi-plus-circle-fill"></span>
+              <span v-if="question2" class="bi bi-dash-circle-fill"></span>
+            </div>
+            <dd v-if="question2">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque similique deserunt, voluptates odit veritatis doloribus, quo neque facere sint minima veniam, nisi possimus est excepturi sunt. Pariatur delectus iure corporis.
+            </dd>
+            <div @click="question3 = !question3" class="faq-question">
+              <dt>What is FrontEnd Mentor, and how it help me?</dt>
+              <span v-if="!question3" class="bi bi-plus-circle-fill"></span>
+              <span v-if="question3" class="bi bi-dash-circle-fill"></span>
+            </div>
+            <dd v-if="question3"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque similique deserunt, voluptates odit veritatis doloribus, quo neque facere sint minima veniam, nisi possimus est excepturi sunt. Pariatur delectus iure corporis.</dd>
+            <div @click="question4 = !question4" class="faq-question">
+              <dt>What is FrontEnd Mentor, and how it help me?</dt>
+              <span v-if="!question4" class="bi bi-plus-circle-fill"></span>
+              <span v-if="question4" class="bi bi-dash-circle-fill"></span>
+            </div>
+            <dd v-if="question4"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque similique deserunt, voluptates odit veritatis doloribus, quo neque facere sint minima veniam, nisi possimus est excepturi sunt. Pariatur delectus iure corporis.</dd>
+            <div @click="question5 = !question5" class="faq-question">
+              <dt>What is FrontEnd Mentor, and how it help me?</dt>
+              <span v-if="!question5" class="bi bi-plus-circle-fill"></span>
+              <span v-if="question5" class="bi bi-dash-circle-fill"></span>
+            </div>
+            <dd v-if="question5"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque similique deserunt, voluptates odit veritatis doloribus, quo neque facere sint minima veniam, nisi possimus est excepturi sunt. Pariatur delectus iure corporis.</dd>
+          </dl>
+        </div>
+      </section>
+    </div>
+
+  </section>
+
+
+  <script type="module" src="./js/script.js"></script>
+</body>
+
+</html>
